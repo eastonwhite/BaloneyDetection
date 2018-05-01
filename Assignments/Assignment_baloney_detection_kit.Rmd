@@ -1,0 +1,46 @@
+---
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+fontsize: 11pt
+geometry: margin=1in
+header-includes:
+  \usepackage{enumitem}
+---
+
+\begin{flushright} 2018 \end{flushright}
+
+\textbf{\Large Baloney Detection Kit} \newline
+\textbf{Using the baloney detection kit in the 21st century} \newline
+Easton White
+
+\section{Introduction}
+
+Sagan wrote his baloney detection kit over 20 years ago. There was fake news and pseudoscience at that time as there is today. Your job in the assignment will be to use the baloney detection kit to assess a claim in the media. It might be useful to re-read the baloney detection kit from the beginning of class. 
+
+\section{Your assignment}
+
+This assignment consists of two main parts. First, choose a tool from Sagan's baloney detection kit. Alternatively, you can create your own tool. Explain how the tool works. Next, put the tool into action. Use it to evaluate a claim in a newspaper article, by a politician, in an advertisement, or another example. 
+
+In your writeup, be sure to address the following questions:
+ 
+ - How does the tool you have chosen work?
+ - How does the tool help you understand the arguments made in the piece of media that you chose?
+
+
+\section{How you will be graded}
+
+\begin{table}[!h]
+\begin{tabular}{l | l}
+    Criteria & Points \\ \hline \hline
+    Addressed questions in previous section & 10 \\
+    Quality of writing & 5 \\
+    Formatting and referencing the source & 5 \\ \hline
+    Total & 20
+\end{tabular}
+\end{table}
+ 
+Quality of writing depends on the logical argument presented, sentence structure, ability to organize the information into paragraphs, and grammar. Please be sure to re-read your own paper, have friends read it, and even take it to a writing specialist in the Student Academic Success Center. I expect well-crafted essays that have been edited.
+
+Your article summary should be 1-2 pages, double-spaced, and 12 point font. You also need to include a reference to the article that you are evaluating. Also, be sure to reference any articles or websites that you use in evaluating the article.

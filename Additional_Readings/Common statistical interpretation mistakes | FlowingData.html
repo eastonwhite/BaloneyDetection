@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+ 
+<meta charset="utf-8">
+<title>Common statistical interpretation mistakes | FlowingData</title>
+<meta name="description" content="FlowingData">
+<meta name="author" content="Nathan Yau">
+<meta name="generator" content="WordPress 4.7.5"/>  
+<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7626174/696048/css/fonts.css"/>
+<link rel="stylesheet" href="http://flowingdata.com/wp-content/themes/fd-modern-5-4/style.css" type="text/css" media="screen"/>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://flowingdata.com/feed"/>
+<link rel="pingback" href="http://flowingdata.com/xmlrpc.php"/>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+ 
+<link rel="stylesheet" href="http://flowingdata.com/wp-content/themes/fd-modern-5-4/stylesheets/skeleton-2.css">
+<link rel="stylesheet" href="http://flowingdata.com/wp-content/themes/fd-modern-5-4/stylesheets/layout.css">
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+ 
+<link rel="shortcut icon" href="http://flowingdata.com/wp-content/themes/fd-modern-5-4/images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/2462688/Bottom_Post', [300, 250], 'div-gpt-ad-1461948431098-0').addService(googletag.pubads());
+    googletag.defineSlot('/2462688/grid_bottom', [300, 250], 'div-gpt-ad-1461948431098-1').addService(googletag.pubads());
+    googletag.defineSlot('/2462688/grid_top', [300, 250], 'div-gpt-ad-1461948431098-2').addService(googletag.pubads());
+    googletag.defineSlot('/2462688/Sidebar_bottom', [300, 250], 'div-gpt-ad-1461948431098-3').addService(googletag.pubads());
+    googletag.defineSlot('/2462688/Sidebar_rectangle', [300, 250], 'div-gpt-ad-1461948431098-4').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<link rel='dns-prefetch' href='//s0.wp.com'/>
+<link rel='dns-prefetch' href='//s.w.org'/>
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/flowingdata.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-0.1em!important;background:none!important;padding:0!important;}</style>
+<link rel='stylesheet' id='yarppWidgetCss-css' href='http://flowingdata.com/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.7.5' type='text/css' media='all'/>
+<link rel='stylesheet' id='social-logos-css' href='http://flowingdata.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=1' type='text/css' media='all'/>
+<link rel='stylesheet' id='jetpack_css-css' href='http://flowingdata.com/wp-content/plugins/jetpack/css/jetpack.css?ver=5.0' type='text/css' media='all'/>
+<script type='text/javascript' src='http://flowingdata.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://flowingdata.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://flowingdata.com/wp-json/'/>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://flowingdata.com/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://flowingdata.com/wp-includes/wlwmanifest.xml"/>
+<link rel='prev' title='LeBron James passed Michael Jordan in playoff points' href='http://flowingdata.com/2017/06/01/lebron-james-passed-michael-jordan-in-playoff-points/'/>
+<link rel='next' title='xkcd: Words in every state map' href='http://flowingdata.com/2017/06/02/xkcd-words-in-every-state-map/'/>
+<meta name="generator" content="WordPress 4.7.5"/>
+<link rel="canonical" href="http://flowingdata.com/2017/06/02/statistical-mistakes/"/>
+<link rel='shortlink' href='http://flowingdata.com/?p=48751'/>
+<link rel="alternate" type="application/json+oembed" href="http://flowingdata.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fflowingdata.com%2F2017%2F06%2F02%2Fstatistical-mistakes%2F"/>
+<link rel="alternate" type="text/xml+oembed" href="http://flowingdata.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fflowingdata.com%2F2017%2F06%2F02%2Fstatistical-mistakes%2F&#038;format=xml"/>
+<link rel='dns-prefetch' href='//v0.wordpress.com'>
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<style type='text/css'>img#wpstats{display:none}</style>
+ 
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Common statistical interpretation mistakes"/>
+<meta property="og:url" content="http://flowingdata.com/2017/06/02/statistical-mistakes/"/>
+<meta property="og:description" content="Statistics is a game of subtleties, and you lose when you don&#8217;t pay attention to the details. Here are a handful of common mistakes when interpreting the numbers. In a nutshell: You get into …"/>
+<meta property="article:published_time" content="2017-06-02T07:01:42+00:00"/>
+<meta property="article:modified_time" content="2017-05-29T17:35:20+00:00"/>
+<meta property="og:site_name" content="FlowingData"/>
+<meta property="og:image" content="http://i2.wp.com/flowingdata.com/wp-content/uploads/2017/05/statistical-noise.jpg?fit=754%2C424"/>
+<meta property="og:image:width" content="754"/>
+<meta property="og:image:height" content="424"/>
+<meta property="og:locale" content="en_US"/>
+<meta name="twitter:site" content="@flowingdata"/>
+<meta name="twitter:image" content="http://i2.wp.com/flowingdata.com/wp-content/uploads/2017/05/statistical-noise.jpg?fit=754%2C424&#038;w=640"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<link rel="icon" href="http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/10/logo-lone-square-600-5451c585_site_icon.png?fit=32%2C32" sizes="32x32"/>
+<link rel="icon" href="http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/10/logo-lone-square-600-5451c585_site_icon.png?fit=192%2C192" sizes="192x192"/>
+<link rel="apple-touch-icon-precomposed" href="http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/10/logo-lone-square-600-5451c585_site_icon.png?fit=180%2C180"/>
+<meta name="msapplication-TileImage" content="http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/10/logo-lone-square-600-5451c585_site_icon.png?fit=270%2C270"/>
+<style type="text/css" id="wp-custom-css">iframe.responsive{max-width:100%;}p small{font-size:.8em;line-height:10px;}table td{border:1px solid #ccc;padding:14px;}#single-post h1{line-height:1.3em;}.meta-bar{margin-bottom:1.3em;}.entry table h4{font-size:1em;margin:0;}.breakout h4{margin-bottom:3px;}.entry .pagenav h3,.entry .pagenav h4{margin-top:.1em;}#gallery-5 .gallery.gallery-size-thumbnail .gallery-icon img{border:1px solid #ccc;}#single-post .archive-featured-image{text-align:center;}</style>
+</head>
+<body>
+<div id="main-wrapper">
+<a name="top"></a>
+<div id="header-wrapper">
+<div id="header" class="container">
+<div id="logo" class="four columns">
+<a href="http://flowingdata.com/">
+<img src="http://flowingdata.com/wp-content/themes/fd-modern-5-4/images/logo-v2d.png"/>
+</a>
+</div>
+<div id="nav" class="eight columns">
+<ul>
+<li><a href="https://flowingdata.com/membership/">Membership</a></li>
+<li><a href="https://flowingdata.com/courses/">Courses</a></li>
+<li><a href="http://flowingdata.com/category/tutorials/">Tutorials</a></li>
+<li><a href="http://flowingdata.com/books/">Books</a></li>
+<li><a href="http://flowingdata.com/category/projects/">Projects</a></li>
+</ul>
+</div>
+<div id="login" class="four columns">
+<ul>
+<li><a href="https://flowingdata.com/membership/" class="highlight">Become a Member</a></li>
+<li>&nbsp;|&nbsp;</li>
+<li><a href="https://flowingdata.com/wp-login.php">Log in</a></li>
+</ul>
+</div>
+</div> 
+</div> 
+<div id="content-wrapper" class="container">
+<div id="single-post" class="two-thirds column archive-post">
+<h1>
+Common statistical interpretation mistakes </h1>
+<div class="meta-bar">
+Posted to <a href="http://flowingdata.com/category/statistics/mistaken-data/" rel="category tag">Mistaken Data</a> &nbsp;|&nbsp; Tags: <a href="http://flowingdata.com/tag/causation/" rel="tag">causation</a>, <a href="http://flowingdata.com/tag/correlation/" rel="tag">correlation</a>, <a href="http://flowingdata.com/tag/noise/" rel="tag">noise</a>, <a href="http://flowingdata.com/tag/pitfalls/" rel="tag">pitfalls</a> &nbsp;|&nbsp; <a href="http://flowingdata.com/about-nathan" title="Visit Nathan Yau&#8217;s website" rel="author external">Nathan Yau</a> </div> 
+<div class="archive-featured-image" style="margin-top:18px">
+<img width="720" height="405" src="http://i2.wp.com/flowingdata.com/wp-content/uploads/2017/05/statistical-noise.jpg?fit=720%2C405" class="attachment-medium size-medium wp-post-image" alt="" srcset="http://i2.wp.com/flowingdata.com/wp-content/uploads/2017/05/statistical-noise.jpg?w=754 754w, http://i2.wp.com/flowingdata.com/wp-content/uploads/2017/05/statistical-noise.jpg?resize=210%2C118 210w, http://i2.wp.com/flowingdata.com/wp-content/uploads/2017/05/statistical-noise.jpg?resize=720%2C405 720w" sizes="(max-width: 720px) 100vw, 720px" data-attachment-id="48753" data-permalink="http://flowingdata.com/2017/06/02/statistical-mistakes/statistical-noise/" data-orig-file="http://i2.wp.com/flowingdata.com/wp-content/uploads/2017/05/statistical-noise.jpg?fit=754%2C424" data-orig-size="754,424" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Statistical noise" data-image-description="" data-medium-file="http://i2.wp.com/flowingdata.com/wp-content/uploads/2017/05/statistical-noise.jpg?fit=720%2C405" data-large-file="http://i2.wp.com/flowingdata.com/wp-content/uploads/2017/05/statistical-noise.jpg?fit=754%2C424"/> </div>
+<div class="entry">
+<p>Statistics is a game of subtleties, and you lose when you don&#8217;t pay attention to the details. <a href="http://theconversation.com/the-seven-deadly-sins-of-statistical-misinterpretation-and-how-to-avoid-them-74306">Here are a handful of common mistakes when interpreting the numbers</a>. In a nutshell: You get into trouble when you assume and ignore.</p>
+</div>
+<div class="clr"></div>
+<div class="share"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-48751" class="share-facebook sd-button share-icon" href="http://flowingdata.com/2017/06/02/statistical-mistakes/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-48751" class="share-twitter sd-button share-icon" href="http://flowingdata.com/2017/06/02/statistical-mistakes/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="http://flowingdata.com/2017/06/02/statistical-mistakes/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li></ul></div></div></div></div>
+<div class='yarpp-related'>
+<div id="related">
+<h3>Related Posts</h3>
+<ul>
+<li>
+<a href="http://flowingdata.com/2013/12/31/statistics-done-wrong-a-guide-to-common-analysis-mistakes/" rel="bookmark" title="Statistics Done Wrong, a guide to common analysis mistakes">
+Statistics Done Wrong, a guide to common analysis mistakes</a>
+<span class="meta">Posted to <a href="http://flowingdata.com/category/statistics/" rel="category tag">Statistics</a></span>
+</li>
+<li>
+<a href="http://flowingdata.com/2012/05/03/common-statistical-fallacies/" rel="bookmark" title="Common statistical fallacies">
+Common statistical fallacies</a>
+<span class="meta">Posted to <a href="http://flowingdata.com/category/statistics/" rel="category tag">Statistics</a></span>
+</li>
+<li>
+<a href="http://flowingdata.com/2010/06/09/strata-of-common-and-not-so-common-colors/" rel="bookmark" title="Strata of common and not so common colors">
+Strata of common and not so common colors</a>
+<span class="meta">Posted to <a href="http://flowingdata.com/category/visualization/statistical-visualization/" rel="category tag">Statistical Visualization</a></span>
+</li>
+</ul>
+<div class="clear-line"></div>
+</div>
+</div>
+<div id="more-actions">
+<div id="med-sponsor-bottom">
+ 
+<div id='div-gpt-ad-1461948431098-0' style='height:250px; width:300px;'>
+<script type='text/javascript'>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1461948431098-0'); });
+			</script>
+</div>
+</div>
+<div class="clear-line"></div>
+</div> 
+<span id="comments"></span>
+</div> 
+<div id="sidebar" class="one-third column">
+<div id="med-sponsor-top" class="sec">
+ 
+<div id='div-gpt-ad-1461948431098-4' style='height:250px; width:300px; margin-bottom: 30px'>
+<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1461948431098-4'); });
+		</script>
+</div>
+</div>
+<div id="membership-sidebar" class="sec centered">
+<a href="https://flowingdata.com/membership/">
+<p>
+<strong>Become a member.</strong>
+<br/>Learn to visualize your data.
+<br/>From beginner to advanced.
+ 
+</p>
+<p><small>What you get</small></p>
+</a>
+</div>
+</div> 
+<div class="clr"></div>
+<div id="favorites" class="container across post-list" style="border-top:1px solid #ccc;margin-top:30px;padding-top:30px;">
+<h3 class="toplevel sixteen columns">Favorites</h3>
+<div class="archive-post four columns">
+<a href="http://flowingdata.com/2016/01/05/causes-of-death/" rel="bookmark">
+<div class="archive-featured-image cropped">
+<img width="400" height="250" src="http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/01/Cause-of-Death-by-Age.png?resize=400%2C250" class="attachment-archive-cropped size-archive-cropped wp-post-image" alt="" srcset="http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/01/Cause-of-Death-by-Age.png?resize=400%2C250 400w, http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/01/Cause-of-Death-by-Age.png?zoom=2&amp;resize=400%2C250 800w, http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/01/Cause-of-Death-by-Age.png?zoom=3&amp;resize=400%2C250 1200w" sizes="(max-width: 400px) 100vw, 400px" data-attachment-id="43908" data-permalink="http://flowingdata.com/2016/01/05/causes-of-death/cause-of-death-by-age/" data-orig-file="http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/01/Cause-of-Death-by-Age.png?fit=1800%2C914" data-orig-size="1800,914" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Causes of Death" data-image-description="" data-medium-file="http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/01/Cause-of-Death-by-Age.png?fit=720%2C366" data-large-file="http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/01/Cause-of-Death-by-Age.png?fit=1090%2C553"/> </div>
+<h4>Causes of Death</h4>
+<div class="excerpt"><p>There are many ways to die. Cancer. Infection. Mental. External. This is how different groups of people died over the past 10 years, visualized by age.</p>
+</div>
+</a>
+</div> 
+<div class="archive-post four columns">
+<a href="http://flowingdata.com/2016/03/03/marrying-age/" rel="bookmark">
+<div class="archive-featured-image cropped">
+<img width="400" height="250" src="http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/03/marriage-featured.jpg?resize=400%2C250" class="attachment-archive-cropped size-archive-cropped wp-post-image" alt="" srcset="http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/03/marriage-featured.jpg?resize=400%2C250 400w, http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/03/marriage-featured.jpg?zoom=2&amp;resize=400%2C250 800w, http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/03/marriage-featured.jpg?zoom=3&amp;resize=400%2C250 1200w" sizes="(max-width: 400px) 100vw, 400px" data-attachment-id="44347" data-permalink="http://flowingdata.com/2016/03/03/marrying-age/marriage-featured/" data-orig-file="http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/03/marriage-featured.jpg?fit=1800%2C900" data-orig-size="1800,900" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="When Americans Marry" data-image-description="" data-medium-file="http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/03/marriage-featured.jpg?fit=720%2C360" data-large-file="http://i1.wp.com/flowingdata.com/wp-content/uploads/2016/03/marriage-featured.jpg?fit=1090%2C545"/> </div>
+<h4>Marrying Age</h4>
+<div class="excerpt"><p>People get married at various ages, but there are definite trends that vary across demographic groups. What do these trends look like?</p>
+</div>
+</a>
+</div> 
+<div class="archive-post four columns">
+<a href="http://flowingdata.com/2011/10/13/life-expectancy-changes/" rel="bookmark">
+<div class="archive-featured-image cropped">
+<img width="400" height="250" src="http://i2.wp.com/flowingdata.com/wp-content/uploads/2011/10/Life-expectancy.png?resize=400%2C250" class="attachment-archive-cropped size-archive-cropped wp-post-image" alt="" srcset="http://i2.wp.com/flowingdata.com/wp-content/uploads/2011/10/Life-expectancy.png?resize=400%2C250 400w, http://i2.wp.com/flowingdata.com/wp-content/uploads/2011/10/Life-expectancy.png?zoom=2&amp;resize=400%2C250 800w" sizes="(max-width: 400px) 100vw, 400px" data-attachment-id="19291" data-permalink="http://flowingdata.com/2011/10/13/life-expectancy-changes/life-expectancy/" data-orig-file="http://i2.wp.com/flowingdata.com/wp-content/uploads/2011/10/Life-expectancy.png?fit=930%2C674" data-orig-size="930,674" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Life expectancy" data-image-description="" data-medium-file="http://i2.wp.com/flowingdata.com/wp-content/uploads/2011/10/Life-expectancy.png?fit=720%2C522" data-large-file="http://i2.wp.com/flowingdata.com/wp-content/uploads/2011/10/Life-expectancy.png?fit=930%2C674"/> </div>
+<h4>Life expectancy changes</h4>
+<div class="excerpt"><p>The data goes back to 1960 and up to the most current estimates for 2009. Each line represents a country.</p>
+</div>
+</a>
+</div> 
+<div class="archive-post four columns">
+<a href="http://flowingdata.com/2014/07/02/jobs-charted-by-state-and-salary/" rel="bookmark">
+<div class="archive-featured-image cropped">
+<img width="400" height="250" src="http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/07/Jobs-in-America.png?resize=400%2C250" class="attachment-archive-cropped size-archive-cropped wp-post-image" alt="" srcset="http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/07/Jobs-in-America.png?w=944 944w, http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/07/Jobs-in-America.png?resize=210%2C131 210w, http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/07/Jobs-in-America.png?resize=720%2C450 720w, http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/07/Jobs-in-America.png?resize=768%2C480 768w, http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/07/Jobs-in-America.png?resize=400%2C250 400w" sizes="(max-width: 400px) 100vw, 400px" data-attachment-id="35661" data-permalink="http://flowingdata.com/2014/07/02/jobs-charted-by-state-and-salary/jobs-in-america/" data-orig-file="http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/07/Jobs-in-America.png?fit=944%2C590" data-orig-size="944,590" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Jobs in America" data-image-description="" data-medium-file="http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/07/Jobs-in-America.png?fit=720%2C450" data-large-file="http://i1.wp.com/flowingdata.com/wp-content/uploads/2014/07/Jobs-in-America.png?fit=944%2C590"/> </div>
+<h4>Jobs Charted by State and Salary</h4>
+<div class="excerpt"><p>Jobs and pay can vary a lot depending on where you live, based on 2013 data from the Bureau of Labor Statistics. Here&#8217;s an interactive to look.</p>
+</div>
+</a>
+</div> 
+</div>
+<div class="clr"></div>
+</div> 
+<div id="footer-wrapper">
+<div id="footer" class="container">
+<ul id="final-links">
+<li><a href="http://flowingdata.com/about">About</a></li>
+<li><a href="http://flowingdata.com/contact">Contact</a></li>
+<li><a href="http://flowingdata.com/sponsorship">Sponsorship</a></li>
+<li><a href="http://twitter.com/flowingdata">Twitter</a></li>
+<li><a href="http://facebook.com/flowingdata">Facebook</a></li>
+<li><a href="http://eepurl.com/icL0o">Newsletter</a></li>
+<li><a href="http://flowingdata.com/feed">RSS</a></li>
+</ul>
+<div id="bottom">Copyright &copy; 2007-Present FlowingData. All rights reserved. Be cool.</div>
+<div id="bottom-logo"><a href="http://flowingdata.com"><img src="http://flowingdata.com/wp-content/themes/fd-modern-5-4/images/logo-lone-v2d.png"/></a></div>
+</div> 
+</div> 
+ 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-865100-4");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<link rel='stylesheet' id='yarppRelatedCss-css' href='http://flowingdata.com/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=4.7.5' type='text/css' media='all'/>
+<script type='text/javascript' src='http://flowingdata.com/wp-includes/js/comment-reply.min.js?ver=4.7.5'></script>
+<script type='text/javascript' src='http://flowingdata.com/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201723'></script>
+<script type='text/javascript' src='http://flowingdata.com/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://flowingdata.com/wp-content/plugins/jetpack/modules/sharedaddy/sharing.js?ver=5.0'></script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+</script>
+<script type='text/javascript' src='http://stats.wp.com/e-201723.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.0',blog:'1938889',post:'48751',tz:'-7',srv:'flowingdata.com'} ]);
+	_stq.push([ 'clickTrackerInit', '1938889', '48751' ]);
+</script>
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

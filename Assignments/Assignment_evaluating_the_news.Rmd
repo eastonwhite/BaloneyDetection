@@ -1,0 +1,50 @@
+---
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+fontsize: 11pt
+geometry: margin=1in
+header-includes:
+  \usepackage{enumitem}
+---
+
+\begin{flushright} 2018 \end{flushright}
+
+\textbf{\Large Baloney Detection Kit} \newline
+\textbf{Evaluating claims in the media} \newline
+Easton White
+
+\section{Introduction}
+
+There are lots of sources of information and mis-information online and in the media. How do we evaluate articles? How can we be sure the information within them is the truth? This assignment is intended to help you critically analyze a recent news article.
+
+\section{Your assignment}
+
+This assignment consists of two main parts. First, choose a recent news article from a local or national US newspaper. Find an article on a topic that interests you. The article should be a piece of news and not an opinion piece.
+
+Your job is to evaluate the claims of the article. Is it trustworthy? Why?
+
+Read the article, and the ask yourself the following questions:
+ 
+ - Who wrote the article? Do they have any bias?
+ - Where was the article published? Is it a reliable source?
+ - Are there any numbers or figures referenced in the article? If so, verify that these numbers are correct by finding them from their original data sources. 
+ - What important information is potentially missing from the article?
+
+
+\section{How you will be graded}
+
+\begin{table}[!h]
+\begin{tabular}{l | l}
+    Criteria & Points \\ \hline \hline
+    Addressed questions in previous section & 10 \\
+    Quality of writing & 5 \\
+    Formatting and referencing the source & 5 \\ \hline
+    Total & 20
+\end{tabular}
+\end{table}
+ 
+Quality of writing depends on the logical argument presented, sentence structure, ability to organize the information into paragraphs, and grammar. Please be sure to re-read your own paper, have friends read it, and even take it to a writing specialist in the Student Academic Success Center. I expect well-crafted essays that have been edited.
+
+Your article summary should be one page, double-spaced, and 12 point font. You also need to include a reference to the article that you are evaluating. Also, be sure to reference any articles or websites that you use in evaluating the article.
